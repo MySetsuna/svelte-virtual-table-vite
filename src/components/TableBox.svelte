@@ -33,9 +33,10 @@
       domRef: virtuallTableDom,
       rowHeight: 42,
       height: 600,
-      dataList: Array(600)
+      dataList: Array(1000)
         .fill(0)
         .map((item, index) => ({ id: `${index}` })),
+        tableClass:''
     });
     virtuallTable.domRef.addEventListener("scroll", handleScroll);
     scrollHeight =
